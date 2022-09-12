@@ -21,7 +21,7 @@ container.append(row);
         <h5 class="card-title" style="color:black">CAPITAL: ${value[i].capital}</h5>
         <h5 class="card-title" style="color:black">REGION: ${value[i].region}</h5>
         <h5 class="card-title" style="color:black">COUNTRY CODE: ${value[i].alpha3Code}</h5>
-        <a class="btn btn-primary" href="https://openweathermap.org/find?utf8=%E2%9C%93&q=${value[i].name}" role="button"style="marigin-bottom:50px">Click for weather</a>
+        <a class="btn btn-primary" href="https://api.openweathermap.org/data/2.5/weather?q=${value[i].name}&appid=350cc5c94c108cb0e0955c0bbc8a05cc" role="button"style="marigin-bottom:50px">Click for weather</a>
         
         </div>
         </div>
@@ -29,4 +29,5 @@ container.append(row);
         document.body.append(container);
     }
 });
+
     
